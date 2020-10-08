@@ -1,6 +1,6 @@
-package part3;
+package school;
 
-public class zad2_4 {
+public class Sudoku {
 
 	public static void main(String[] args) {
 		
