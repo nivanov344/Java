@@ -2,7 +2,7 @@ package school;
 
 import java.util.Scanner;
 
-public class Defazirane {
+public class Offset {
 
 	public static void main(String[] args) {
 		
