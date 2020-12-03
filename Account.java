@@ -6,7 +6,7 @@ public class Account {
 	  private double balance, yearInterestRate;
 	  private Date dateCreated;
 
-	  Account() {
+	 public Account() {
 
 	    id = 0;
 	    balance = 0;
@@ -15,44 +15,44 @@ public class Account {
 
 	  }
 
-	  Account(int newId, double newBalance) {
+	 public Account(int newId, double newBalance) {
 
 		  newId = id;
 		  newBalance = balance;
 
 	  }
 
-	  void setId(int newId) {
+	 public void setId(int newId) {
 
 		  newId = id;
 
 	  }
 
-	  int getId() {
+	 public int getId() {
 
 	    return id;
 
 	  }
 
-	  void setBalance(double newBalance) {
+	 public void setBalance(double newBalance) {
 
 		  newBalance = balance;
 
 	  }
 
-	  double getBalance() {
+	 public double getBalance() {
 
 	    return balance;
 
 	  }
 
-	  void setYearInterestRate(double newYearInterestRate) {
+	 public void setYearInterestRate(double newYearInterestRate) {
 
 	    yearInterestRate = newYearInterestRate;
 
 	  }
 
-	  double getYearInterestRate() {
+	 public double getYearInterestRate() {
 
 	    return yearInterestRate;
 
@@ -64,25 +64,25 @@ public class Account {
 
 	  }
 
-	  double getMonthlyInterestRate() {
+	 public double getMonthlyInterestRate() {
 
 	    return yearInterestRate / 12;
 
 	  }
 
-	  double getMonthlyInterest() {
+	 public double getMonthlyInterest() {
 
 	    return balance * getMonthlyInterestRate() / 100;
 
 	  }
 
-	  void withdraw(double withdrawAmount) {
+	 public void withdraw(double withdrawAmount) {
 
 	   balance -= withdrawAmount;
 
 	  }
 
-	  void deposit(double dep) {
+	 public void deposit(double dep) {
 
 	    balance += dep;
 
