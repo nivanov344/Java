@@ -5,16 +5,16 @@ public class Student {
 		  private String name;
 		  private double grade;
 
-		  private Student() {}
+		  public Student() {}
 
-		  private Student(String newName, double newGrade) {
+		  public Student(String newName, double newGrade) {
 
 			newName = name;
 		    newGrade = grade;
 
 		  }
 
-		  private boolean scholarship(Student st) {
+		  public boolean scholarship(Student st) {
 
 		    if (st.grade >= 5.5)
 		      return true;
