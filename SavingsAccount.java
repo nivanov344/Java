@@ -1,19 +1,24 @@
-public class SavingsAccount {
-	public double balance;
-	public String name;
-	public double interstRate = 0.01;
+package school;
+
+import java.util.Scanner;
+
+public class SavingsAccount extends Account{
 	
-	public void deposit(double sum){
-		balance += sum;
+	
+	
+	public SavingsAccount (int id, double balance) {
+		super(id, balance);
 	}
-	public void withdraw (double sumToWithdraw){
-		if (sumToWithdraw<0 || sumToWithdraw > balance){
-			System.out.println("Error");
-			return;
-		}else{
-			balance -=sumToWithdraw;
-			System.out.println("Succesful withdrawl of " + sumToWithdraw + " , new balance is " + balance);
-		}
+	
+	
+	public void withdraw () {
+		Scanner sc = new Scanner(System.in);
+		double withdrawalAmount = -1;
+		do {
+			System.out.println("Please enter withdrawl ammount that does not exceed " + super.getBalance());
+			withdrawalAmount = sc.nextDouble();
+		}while(withdrawalAmount < 0 || withdrawalAmount > super.getBalance());
+		super.withdraw(withdrawalAmount);
+		sc.close();
 	}
-		
 }
