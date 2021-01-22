@@ -1,0 +1,11 @@
+Varna codeFB461 hour09:00
+Paris codeFB431 hour09:15
+Amsterdam codeFB462 hour09:30
+Frankfurt codeKL3076 hour10:00
+London codeLH1429 hour10:20
+Warsaw codeAC9041 hour10:40
+Barcelona codeAF5031 hour10:55
+Vienna codeW64325 hour11:05
+Istanbul codeET1596 hour11:15
+Eindhoven codeSK3733 hour11:25
+Bucharest codeTP7541 hour11:40
